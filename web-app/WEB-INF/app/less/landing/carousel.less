@@ -1,0 +1,68 @@
+ul.hero-carousel {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  li {
+    position: absolute;
+    opacity: 0;
+    .transition(opacity linear 1s);
+    > div {
+      position: absolute;
+      top: 0;
+      width: 602px;
+      height: 262px;
+    }
+
+    &.show {
+      opacity: 1;
+    }
+  }
+}
+
+div.hero-carousel-news {
+  p {
+    opacity: 0;
+    display: none;
+    margin: 0px;
+    .transition(opacity ease-out 1s);
+    .transition(display ease-out 0s);
+    &.show {
+      opacity: 1;
+      display: block;
+    }
+  }
+}
+
+ul.hero-carousel-thumbs {
+  padding: 0;
+  margin: 3px 0;
+  list-style: none;
+  li {
+    float: left;
+    margin-left: 2px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: @border-radius-small;
+    opacity: 0.4;
+    width: 56px;
+    height: 56px;
+    .transition(opacity linear 1s);
+    > div {
+
+    }
+
+    &.show {
+      border: 2px solid @blue;
+      opacity: 1;
+    }
+  }
+}
+
+
+#hero-carousel-item-1 {
+  background: url("/huxley/images/landing/not-1.png") no-repeat center;
+}
+
+#hero-carousel-item-2 {
+  background: url("/huxley/images/landing/not-2.png") no-repeat center;
+}

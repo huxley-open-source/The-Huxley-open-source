@@ -1,0 +1,25 @@
+{
+    "files": [
+        "util.js",
+        "models/*.js",
+        "models/collections/*.js",
+        "views/*.js"
+    ],
+
+    "group": {
+        "files": [
+            "routes/GroupRoute.js",
+            "behavior/group.js"
+        ]
+    },
+
+    "vendors": {
+        "files": [
+            "vendor/underscore.js",
+            "vendor/jquery.js",
+            "vendor/backbone.js",
+            "vendor/ejs.js",
+            "vendor/bootstrap.min.js"
+        ]
+    }
+}

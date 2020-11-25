@@ -1,0 +1,13 @@
+.alert-sm {
+  padding: ceil(@alert-padding * 0.4);
+  font-size: ceil(@font-size-base * 0.75);
+  line-height: ceil(@line-height-computed * 0.5);
+  margin-bottom: 10px;
+  background: @yellow-light;
+
+  > p,
+  > ul,
+  > p + p {
+    margin: 0px;
+  }
+}

@@ -1,0 +1,41 @@
+input[type="text"] {
+
+  &.ui-search {
+    background: #333437;
+    height: 20px;
+    color: @gray;
+    padding: 10px 10px;
+    margin: 0;
+    font-size: 0.90em;
+
+    border: none;
+    .border-radius(5px 0px 0px 5px);
+
+    &:focus {
+      border: none;
+      .box-shadow(none);
+    }
+  }
+
+}
+
+
+input[type="submit"] {
+
+  &.ui-search-button {
+    background: #333437 url('../images/search-button.jpg') no-repeat left top;
+    width: 46px;
+    height: 40px;
+    border: none;
+    text-indent: -9999px;
+    position: relative;
+    margin-left: -5px;
+    cursor: pointer;
+    .border-radius(0px 5px 5px 0px);
+
+    &:focus {
+      border: none;
+      .box-shadow(none);
+    }
+  }
+}

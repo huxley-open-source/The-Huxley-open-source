@@ -1,0 +1,125 @@
+Como iniciar o seu trabalho no Huxley utilizando o GitHub:
+
+
+========================================== PRIMEIRA VEZ NO GITHUB ======================
+
+1) Instale o Git, no Ubuntu podemos fazer da seguinte forma:
+    $ sudo apt-get install git-core git-doc git-gui
+
+2) Verifique se você já possui o diretório .ssh no diretório home do seu usuário:
+    $ cd ~/.ssh
+
+    Se você receber a messagem  “No such file or directory“ não há o diretório.
+
+    Caso contrário verifique se existe os seguintes arquivos neste diretório: id_rsa e id_rsa.pub, se sim faça um backup:
+
+    $ ls
+    id_rsa id_rsa.pub known_hosts
+    $ cp id_rsa* key_backup
+
+3) Gere uma nova chave SSH
+
+    $ssh-keygen -t rsa -C "seu_email@seuemail.com"
+
+    Generating public/private rsa key pair.
+    Enter file in which to save the key (/user/.ssh/id_rsa): <PRESSIONE ENTER>
+    Created directory '/user/.ssh'.
+    Enter passphrase (empty for no passphrase): <DIGITE UMA SENHA>
+    Enter same passphrase again: <REPITA A SENHA>
+
+4) Abra o arquivo id_rsa.pub e copie todo o conteúdo.
+    $ gedit id_rsa.pub
+
+    Abra o site do GitHub https://github.com/account/ssh
+
+    Clique em Add another public key
+
+    Digite um título qualquer e colo o conteúdo do id_rsa.pub no campo Key.
+
+5) Configure o Git
+
+    $ git config --global user.name "SeuNome eSobrenome"
+    $ git config --global user.email seuemail@seuemail.com
+    $ git config --global github.user seuusuariogithub                    //(ex. marcioaug, r0drigopaes, etc...)
+    $ git config --gloval github.token SEUTOKENQUEESTANOSITEDOGITHUB
+
+    O TOKEN está aqui https://github.com/account/admin na parte:
+    API Token
+    Your API token is XxxXXxxXxXxxxXxXXXXXXxxxXXXxxXXx — keep it secret! Changing your password will generate a new token.
+
+
+
+
+======================================== BAIXAR O CÓDIGO DO REPOSITÓRIO ========================
+
+Acesse a página do projeto utilizando o link: https://github.com/r0drigopaes/The-Huxley (Provavalmente é esta que você está agora :))
+
+Clique no botão Fork, na parte superior direita, depois do título r0drigopaes / The-Huxley, na parte esquerda.
+
+1) Clone o repositório remoto do Huxley
+
+    $ cd ~/projetos/com.thehuxley/workspace/
+    $ git clone git@github.com:seuusuario/The-Huxley.git                                       //exemplo $ git clone git@github.com:marcioaug/The-Huxley.git
+
+    Cloning into The-Huxley...
+    remote: Counting objects: 4838, done.
+    remote: Compressing objects: 100% (2389/2389), done.
+    remote: Total 4838 (delta 2362), reused 4838 (delta 2362)
+    Receiving objects: 100% (4838/4838), 96.90 MiB | 145 KiB/s, done.
+    Resolving deltas: 100% (2362/2362), done.
+
+    $ cd The-Huxley/
+
+ 2) Creie uma conexão com o repositório remoto princial
+
+    $ git remote add upstream git@github.com:r0drigopaes/The-Huxley.git
+
+ 3) Atualize o seu código remoto (origin) com o código remoto principal (upstream)
+
+    $ git fetch upstream
+    $ git merge upstream/master
+
+================================ CICLO DE TRABALHO (O INTELLIJ IDEA VAI CUIDAR DOS COMANDOS) ====
+
+    Vá até o diretório do projeto
+
+        $ cd ~/projetos/com.thehuxley/workspace/The-Huxley
+
+    1) Atualize seu repositório local com o seu repositório remoto:
+
+        $ git fetch origin
+        $ git merge origin/master                                   //origin é o nome default do seu repositório remoto, master o branch principal
+
+    2) Depois de trabalhar, envie suas modificações para o seu repositório remoto:
+
+        $ git add -A                                                   //Adiciona e remove no commit os arquivos que foram adicionados ou removidos do projeto.
+        $ git commit -m "um nova message para o seu commit"
+        $ git push origin master
+
+    3) Suponha que você acabou todo o seu trabalho, então envie para o repositório remoto principal (o do Rodrigo Paes)
+
+        $ git fetch upstream
+        $ git merge upstream/master
+
+        $ git push upstream master
+
+
+====================================== UTILIZANDO O INTELLIJ IDEA ===================
+
+ 1) Clique em File > New Project
+
+    Escolha "Import Grais project from existing sources" no Itellij IDEA 10 ou  "Create project from existing sources." no IntelliJ IDEA 11
+    Escolha um nome para o projeto
+    Selecione a pasta do repositório do projeto /home/seuusuário/projetos/The-Huxley
+
+ 2) Perceba que o Intellij IDEA possi um botão Version Control e outro Changes na parte de baixo "Version Control" e "9: Changes"
+
+    Clicando com o botão direito no nome do projeto, em Grails View ou 1: Project você pode selecionar a opção Git > Pull Changes... para atualizar o seu código local com o código no repositório remoto.
+
+    Clicando em "9: Changes" ou digitando Alt + 9 vai abrir um divisão Changes, clicando com o botão direito no Changeset Default você pode escolher a opção Commit Changes...
+    digitar um comentáio e clicar em Commit ou Commit and Push para enviar logo para o repositório remoto.
+
+
+
+ NÃO ESQUEÇA DE SEMPRE FAZER UM PULL (update) ANTES DE UM PUSH (commit) !!!!
+

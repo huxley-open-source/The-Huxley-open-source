@@ -1,0 +1,128 @@
+#topcoder {
+  padding: 0;
+  width: 1030px;
+}
+
+ul.topcoder {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  & li {
+    float: right;
+    height: 58px;
+    max-height: 58px;
+    overflow: hidden;
+    margin-left: 2px;
+
+    &:last-child {
+      margin-left: 0;
+    }
+
+    & .userbox {
+      height: inherit;
+      & > div {
+        float: left;
+        height: inherit;
+        &.position {
+          background: url("/huxley/images/landing/stripe-topcoder.png");
+          font-weight: bold;
+          font-size: 17px;
+          color: #fff;
+          width: 24px;
+          text-align: center;
+          line-height: 58px;
+          cursor: pointer;
+        }
+
+        &.photo {
+          vertical-align: top;
+          width: 58px;
+          cursor: pointer;
+          & img {
+            height: 100%;
+          }
+        }
+
+        &.info {
+          background-color: @blue-lighter;
+          font-size: 11px;
+          width: 0;
+          max-width: 158px;
+          overflow: hidden;
+
+          .transition(width linear .2s);
+
+          & > div {
+            display: table-cell;
+            vertical-align: middle;
+            height: 58px;
+            width: 139px;
+            max-width: 139px;
+            padding-left: 2px;
+            opacity: 0;
+            .transition(opacity ease-in .3s);
+
+            & .score {
+              font-weight: bold;
+              &:after {
+                content: " - ";
+              }
+            }
+
+            & .institution {
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              font-size: 10px;
+              font-style: italic;
+            }
+          }
+
+          &:after {
+            display: table-cell;
+            background: url("/huxley/images/landing/topcoder-icons.png") transparent -38px -27px no-repeat;
+            content: " ";
+            width: 19px;
+          }
+        }
+      }
+
+      &.show {
+        & .info {
+          width: 158px;
+          & > div {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      & .userbox {
+        & > div {
+          &.position {
+            font-size: 25px;
+            color: @blue;
+            width: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.topcoder-title {
+  margin: 30px 0 0 30px;
+  h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: @blue;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1px;
+
+    span {
+      color: @black;
+    }
+  }
+}

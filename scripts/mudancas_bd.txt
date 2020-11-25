@@ -1,0 +1,11 @@
+troquei todos os comandos KEY por INDEX. Na verdade eles são sinônimos. Mas assim, mantemos a palavra key somente para a declaraćão de foreign keys ou primary keys.
+Tabela submission: 
+	submission --> submission_file
+	plagiarism_status alterado de varchar para int
+	evaluation alterada de varchar para int
+
+Tabela achievement -> removida
+Tabela address -> removida
+Tabela analytics_city -> removida
+Tabela analytics_city_language -> removida
+

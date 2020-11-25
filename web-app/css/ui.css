@@ -1,0 +1,351 @@
+/* Markers */
+.ui-bmarker {
+	background: transparent url('../images/bpx.png') repeat;
+	padding: 1px 3px;
+	border: none;
+}
+
+.ui-bmarker a {
+	text-decoration: none;
+}
+
+.ui-wmarker {
+	background: transparent url('../images/wpx.png') repeat;
+	padding: 1px 3px;
+	border: none;
+}
+
+.ui-wmarker a {
+	text-decoration: none;
+}
+
+/* Buttons */
+.ui-rbutton {
+	background: #cb4848;
+	padding: 8px 20px;
+	cursor: pointer;
+
+	color: #FFFFFF !important;
+	font-family: Arial;
+	text-decoration: none !important;
+
+	border: 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.ui-pbutton {
+	background: #e20d44;
+	padding: 8px 20px;
+	cursor: pointer;
+
+	color: #FFFFFF !important;
+	font-family: Arial;
+	text-decoration: none !important;
+
+	border: 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.ui-bbutton {
+	background: #5bc3ce;
+	padding: 8px 20px;
+	cursor: pointer;
+
+	color: #FFFFFF !important;
+	font-family: Arial;
+	text-decoration: none !important;
+
+	border: 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.ui-gbutton {
+	background: #1bd482;
+	padding: 8px 20px;
+	cursor: pointer;
+
+	color: #FFFFFF !important;
+	font-family: Arial;
+	text-decoration: none !important;
+
+	border: 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.ui-ybutton {
+	background: #c4b902;
+	padding: 8px 20px;
+	cursor: pointer;
+
+	color: #FFFFFF !important;
+	font-family: Arial;
+	text-decoration: none !important;
+
+	border: 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/* Pagination */
+.ui-pagination {
+	margin: 10px 2px;
+	float: right;
+}
+.ui-pagination a {
+	background: #fdfefe;
+	padding: 4px 7px;
+	color: #adadad;
+	font-size: 12px;
+	text-decoration: none;
+}
+.ui-pagination a:hover {
+	background: #c5c5c5;
+	color: #fff !important;
+}
+.ui-pagination a.selected {
+	background: #adadad;
+	color: #fff !important;
+}
+
+/* Input */
+.ui-input {
+	background: #333437;
+	color: #afafaf;
+	padding: 10px 10px;
+
+	border: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.ui-input2 {
+	background: #f9f9f9;
+	color: #999797;
+	padding: 10px 10px;
+	font-size: 12px;
+
+	border: #f2f2f2 1px solid;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.ui-search {
+	background: #333437;
+	height: 20px;
+	color: #afafaf;
+	padding: 10px 10px;
+
+	border: none;
+	-moz-border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	border-radius: 5px 0px 0px 5px;
+}
+
+.ui-search-button {
+	background: #333437 url('../images/search-button.jpg') no-repeat left top;
+	width: 46px;
+	height: 40px;
+
+	border: none;
+	-moz-border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	border-radius: 0px 5px 5px 0px;
+
+	text-indent: -9999px;
+	position: relative;
+	margin-left: -5px;
+	cursor: pointer;
+}
+.ui-search-button, x:-moz-any-link, x:default {
+	top: 1px;
+}
+
+/* Selects */
+.ui-custom-select {
+	position: relative;
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.ui-custom-select select {
+	display: inline-block;
+	border: 1px solid #dedede;
+	padding: 8px 10px;
+	margin: 0;
+	font: inherit;
+	outline:none;
+	line-height: 1.2;
+	background: #f8f8f8 url('../images/select-bg.jpg') repeat-x;
+
+	-webkit-appearance:none;
+
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	cursor: pointer;
+	color: #333333;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.ui-custom-select:after {
+	content: "";
+	position: absolute;
+	top: 1px;
+	right: 2px;
+	padding: 0 10px;
+	background: transparent url('../images/select-arrow.jpg') no-repeat;
+	width: 10px;
+	height: 30px;
+
+	pointer-events:none;
+
+	-webkit-border-radius: 0 6px 6px 0;
+	-moz-border-radius: 0 6px 6px 0;
+	border-radius: 0 6px 6px 0;
+}
+
+/* Lists */
+.ui-page-list li {
+	background: #f4f4f4;
+	width: 690px;
+	height: 20px;
+	display: block;
+	border-bottom: #fbfbfb 1px solid;
+	padding: 10px 10px;
+	margin-top: 2px;
+}
+
+.ui-page-list li:nth-child(2n+1) {
+    background-color: #f8f8f8;
+}
+.ui-page-list a {
+	color: #878787 !important;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+/* Scrollbar */
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 5px;
+	height: 100%;
+	background: red;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: #f6f6f6;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #d8e8f5;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #cbe1f4;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #cbe1f4;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #cbe1f4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}

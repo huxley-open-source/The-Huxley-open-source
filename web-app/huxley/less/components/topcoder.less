@@ -1,0 +1,74 @@
+.topcoder {
+
+  background: #fff;
+  border: solid 1px #e6e6e6;
+  margin-top: 12px;
+  font-size: .93em;
+
+  & h3 {
+    margin: 0 0 0 10px;
+    font-weight: bold;
+    color: #b3b3b3;
+    & span {
+      color: #6bdae9;
+    }
+  }
+
+  & ul.topcoders-list {
+    & > li {
+      padding: .6em .4em;
+      border-top: 1px solid #f3f3f3;
+      &:nth-child(odd) {
+        background: #f9f9f9;
+      }
+
+      & .user-box {
+        display: table;
+        width: 100%;
+        & div {
+          display: table-cell;
+          vertical-align: middle;
+          &.position {
+            display: table-cell;
+            font-size: 1.15em;
+            font-style: italic;
+            font-weight: bold;
+            width: 20px;
+            text-align: right;
+          }
+          &.picture {
+            display: table-cell;
+            height: 40px;
+            width: 40px;
+            & img {
+              width: auto;
+              height: inherit;
+            }
+          }
+          &.info {
+            & ul {
+              margin-left: 6px;
+              & li {
+                line-height: 1.1em;
+              }
+              & .name {
+                & a {
+                  font-weight: bold;
+                  color: #767676;
+                }
+              }
+              & .score {
+                font-size: 0.72em;
+              }
+              & .institution {
+                font-size: 0.72em;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

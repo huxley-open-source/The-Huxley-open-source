@@ -1,0 +1,52 @@
+.group-institution {
+  font-size: 0.8em;
+  color: @grayLight;
+}
+
+.group-date {
+  float: right;
+  font-size: 0.8em;
+  color: @grayLight;
+}
+
+.group-show-user {
+  float: left;
+  width: 222px;
+  font-size: .9em;
+  margin: 10px 4px;
+  & .user-box {
+    display: table;
+    vertical-align: middle;
+    min-height: 64px;
+    max-height: 64px;
+    height: 64px;
+    & .picture {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    & .info {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 6px;
+
+      & .institution {
+        color: @grayLight;
+        font-size: .7em;
+      }
+    }
+  }
+
+}
+
+.group-list {
+  margin-bottom: 30px;
+}
+
+.group-show-header {
+  margin-bottom: 10px;
+  border-bottom: 1px solid @grayLighter;
+  & h2 {
+    font-weight: bold;
+  }
+}

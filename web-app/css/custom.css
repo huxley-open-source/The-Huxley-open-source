@@ -1,0 +1,73 @@
+/* Lightbox */
+div#voverlay {
+	background-image:url(../images/lightbox/white.png);
+	width:480px;
+	height:364px;
+	display:none;
+	padding:25px 25px 0px 25px;
+}
+
+div#voverlay div.close {
+	background-image:url(../images/lightbox/close.png);
+	position:absolute;
+	right:5px;
+	top:5px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+}
+
+div#vcontainer{
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;	
+	background:url(../images/lightbox/loading.gif) no-repeat 50% 50%;
+}
+
+/* Slideshow */
+#slide-runner {
+	background: #ffffff;
+	width: 370px;
+	height: 320px;
+	overflow: hidden;
+	position: relative;
+}
+
+#slide-runner img {
+	margin: 0px 0px;
+	display: none;
+	position: absolute;
+}
+
+#slide-controls {
+	position: absolute;
+	bottom: 15px;
+	right: -8px;
+}
+
+#slide-controls p#slide-nav {
+	float: right;
+	height: 24px;
+	display: inline;
+	margin: 11px 15px 0px 0px;
+}
+
+#slide-controls p#slide-nav a {
+	background: #ffffff;
+	width: 10px;
+	height: 10px;
+	display: block;
+	font-size: 0px;
+	margin-top: 6px;
+	opacity: 0.4;
+	filter:alpha(opacity=50);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#slide-controls p#slide-nav a.on {
+	opacity: 1.0;
+	filter:alpha(opacity=100);
+}

@@ -1,0 +1,705 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { padding: 0; margin: 0; } table { border-collapse: collapse; border-spacing: 0; } fieldset,img { border: 0; } address,caption,cite,code,dfn,em,strong,th,var { font-weight: normal; font-style: normal; } ol,ul { list-style: none; } caption,th { text-align: left; } h1,h2,h3,h4,h5,h6 { font-weight: normal; font-size: 100%; } q:before,q:after { content:''; } abbr,acronym { border: 0; }
+
+* {
+  outline: none;
+}
+
+html, body {
+  font-family: Arial;
+  font-size: 100%;
+}
+
+#innerpage > div#header {
+  background: #272b31;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: inset 0px 0px 30px 0px #101010;
+  box-shadow: inset 0px 0px 30px 0px #101010;
+}
+
+/* Innerpage > Header */
+#innerpage > div#header > div.wrapper {
+  width: 960px;
+  height: 40px;
+  margin: 0px auto;
+  padding: 15px 0px;
+}
+
+/* Innerpage > Header > Logo */
+#innerpage > div#header > div.wrapper > div.logo {
+  width: 136px;
+  height: 25px;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+  float: left;
+}
+
+/* Innerpage > Header > Panel */
+#innerpage > div#header > div.wrapper > div.panel {
+  width: 790px;
+  float: left;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > div.separator {
+  background: transparent url('../images/separator.jpg') no-repeat left top;
+  width: 2px;
+  height: 40px;
+  float: left;
+  margin: 0px 15px;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.home a {
+  background: transparent url('../images/icons/icons.png') no-repeat left top;
+  background-position: -2px -32px;
+  width: 21px;
+  height: 23px;
+  margin-top: 10px;
+  text-indent: -9999px;
+  float: left;
+}
+#innerpage > div#header > div.wrapper > div.panel > li.home a:hover {
+  background-position: -2px -2px;
+}
+#innerpage > div#header > div.wrapper > div.panel > li.home a.active {
+  background-position: -2px -2px;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.search {
+  float: left;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.notifications a {
+  background: transparent url('../images/icons/icons.png') no-repeat left top;
+  background-position: -35px -38px;
+  width: 20px;
+  height: 16px;
+  margin-top: 15px;
+  float: left;
+}
+#innerpage > div#header > div.wrapper > div.panel > li.notifications a:hover {
+  background-position: -35px -8px;
+}
+#innerpage > div#header > div.wrapper > div.panel > li.notifications a.active {
+  background-position: -35px -8px;
+}
+#innerpage > div#header > div.wrapper > div.panel > li.notifications a .new {
+  background: #e00000;
+  width: 10px;
+  height: 10px;
+  border: #ffffff 2px solid;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: -8px 0px 0px 10px;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.profile {
+  width: 210px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  float: left;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.profile > div.profile-dropbox {
+  background: #14b0b7;
+  width: 100%;
+  padding: 80px 10px 10px 10px;
+  position: relative;
+  top: -15px;
+  left: 10px;
+  z-index: 2;
+  margin: 0px 0px -9999px -9999px;
+  float: right;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.profile > div.profile-dropbox a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Helvetica', Arial;
+  font-size: 15px;
+  line-height: 1.8em;
+  padding-left: 6px;
+}
+#innerpage > div#header > div.wrapper > div.panel > li.profile > div.profile-dropbox a:hover {
+  border-left: #fff 1px solid;
+  padding-left: 5px;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.profile > div.photo {
+  border: #ffffff 2px solid;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  float: left;
+  -webkit-box-shadow: 1px 2px 2px 0px #1b1b1b;
+  box-shadow: 1px 2px 2px 0px #1b1b1b;
+  position: relative;
+  z-index: 3;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.profile > div.name {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 11px 0px 0px 10px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 3;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.profile > div.arrow {
+  background: transparent url('../images/icons/icons.png') no-repeat left top;
+  background-position: -120px -72px;
+  width: 25px;
+  height: 5px;
+  margin-top: 20px;
+  text-indent: -9999px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 3;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.profile > div.arrow-active {
+  background: transparent url('../images/icons/icons.png') no-repeat left top;
+  background-position: -124px -81px;
+  width: 25px;
+  height: 5px;
+  margin-top: 20px;
+  text-indent: -9999px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 3;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.configs {
+  width: 45px;
+  float: left;
+}
+#innerpage > div#header > div.wrapper > div.panel > li.configs > div.icon {
+  background: transparent url('../images/icons/icons.png') no-repeat left top;
+  background-position: -66px -32px;
+  width: 20px;
+  height: 22px;
+  margin-top: 11px;
+  text-indent: -9999px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+#innerpage > div#header > div.wrapper > div.panel > li.configs > div.icon:hover {
+  background-position: -66px -2px;
+}
+#innerpage > div#header > div.wrapper > div.panel > li.configs > div.icon-active {
+  background: transparent url('../images/icons/icons.png') no-repeat left top;
+  background-position: -66px -2px;
+  width: 20px;
+  height: 22px;
+  margin-top: 11px;
+  text-indent: -9999px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 3;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.configs > div.arrow {
+  background: transparent url('../images/icons/icons.png') no-repeat left top;
+  background-position: -120px -72px;
+  width: 25px;
+  height: 5px;
+  margin-top: 20px;
+  text-indent: -9999px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.configs > div.arrow-active {
+  background: transparent url('../images/icons/icons.png') no-repeat left top;
+  background-position: -124px -81px;
+  width: 25px;
+  height: 5px;
+  margin-top: 20px;
+  text-indent: -9999px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.configs > div.dropbox {
+  background: transparent url('../images/config-bg.png') no-repeat left top;
+  width: 170px;
+  height: auto;
+  padding: 82px 10px 10px 10px;
+  position: relative;
+  top: -15px;
+  left: -121px;
+  z-index: 1;
+  margin: 0px -9999px -9999px 0px;
+  float: left;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li.configs > div.dropbox a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Helvetica', Arial;
+  font-size: 15px;
+  padding-left: 6px;
+  line-height: 1.8em;
+}
+#innerpage > div#header > div.wrapper > div.panel > li.configs > div.dropbox a:hover {
+  border-left: #fff 1px solid;
+  padding-left: 5px;
+}
+
+#innerpage > div#menu-panel {
+  width: 100%;
+  float: left;
+  position: absolute;
+}
+
+#innerpage > div#menu-panel > div#menu-panel-content {
+  width: 950px;
+  margin: 0 auto;
+}
+
+#innerpage > div#menu-panel > div#menu-panel-content > div#config-menu {
+  background: #05c629;
+  float: right;
+  opacity: 0.95;
+  padding: 9px 5px 9px 5px;
+  position: relative;
+  display: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  z-index: 100 !important;
+}
+
+#innerpage > div#menu-panel > div#menu-panel-content > div#profile-menu {
+  width: 220px;
+  background: #14b0b7;
+  position: relative;
+  left: 648px;
+  opacity: 0.95;
+  padding: 9px 5px 9px 5px;
+  display: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  z-index: 100 !important;
+}
+
+.menu-item {
+  display: block;
+  text-decoration: none;
+  font-family: 'Helvetica', Arial, sans-serif;
+  height: 28px;
+  font-size: 15px;
+  line-height: 28px;
+  padding: 0 16px 0 16px;
+  color: white;
+  border-left: solid 1px transparent;
+}
+
+.menu-item:hover {
+  border-left: solid 1px white;
+  color: #fff;
+  text-decoration: none;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li#config-menu-button {
+  width: 45px;
+  height: 60px;
+  float: left;
+}
+#innerpage > div#header > div.wrapper > div.panel > li#config-menu-button > div.icon {
+  background: transparent url('../images/icons/icons.png') no-repeat left top;
+  background-position: -66px -32px;
+  width: 20px;
+  height: 22px;
+  margin-top: 11px;
+  text-indent: -9999px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+#innerpage > div#header > div.wrapper > div.panel > li#config-menu-button > div.icon:hover {
+  background-position: -66px -2px;
+}
+#innerpage > div#header > div.wrapper > div.panel > li#config-menu-button > div.icon-active {
+  background: transparent url('../images/icons/icons.png') no-repeat left top;
+  background-position: -66px -2px;
+  width: 20px;
+  height: 22px;
+  margin-top: 11px;
+  text-indent: -9999px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 3;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li#config-menu-button > div.arrow {
+  background: transparent url('../images/icons/icons.png') no-repeat left top;
+  background-position: -120px -72px;
+  width: 25px;
+  height: 5px;
+  margin-top: 20px;                                           opacity: 0.95;
+  padding: 9px 5px;
+  position: relative;
+  z-index: 100 !important;
+  text-indent: -9999px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+
+#innerpage > div#header > div.wrapper > div.panel > li#config-menu-button > div.arrow-active {
+  background: transparent url('../images/icons/icons.png') no-repeat left top;
+  background-position: -124px -81px;
+  width: 25px;
+  height: 5px;
+  margin-top: 20px;
+  text-indent: -9999px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+
+#innerpage > div#header > div.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  height: 70px;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel {
+  display: table-row;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div.logo {
+  display: table-cell;
+  height: 70px;
+  padding: 0 20px 0 10px;
+  vertical-align: middle;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div.separator {
+  background: url("../images/separator.jpg") no-repeat scroll left 15px transparent;
+  margin: 0 15px 0 15px;
+  height: 70px;
+  width: 2px;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div.plseparator {
+  background: url("../images/separator.jpg") no-repeat scroll left 15px transparent;
+  margin: 0 4px 0 15px;
+  height: 70px;
+  width: 2px;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div.prseparator {
+  background: url("../images/separator.jpg") no-repeat scroll left 15px transparent;
+  margin: 0 5px 0 5px;
+  height: 70px;
+  width: 2px;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#home {
+  height: 70px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#home a {
+  background: url("../images/icons/icons.png") no-repeat scroll -2px -32px transparent;
+  float: left;
+  height: 23px;
+  text-indent: -9999px;
+  width: 21px;
+}
+
+div#header-search {
+  height: 70px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+div#header-search #header-search-label {
+  display: none;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#notification {
+  height: 70px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#notification a {
+  background: url("../images/icons/icons.png") no-repeat scroll -35px -38px transparent;
+  float: left;
+  height: 14px;
+  width: 20px;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#header-profile {
+  cursor: pointer;
+  width: 210px;
+  z-index: 3;
+  height: 70px;
+  vertical-align: middle;
+  display: table-cell;
+  padding: 0 10px 0 10px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > .header-profiled {
+
+  background: #14b0b7;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#header-profile > div.photo{
+  height: 70px;
+  max-height: 70px;
+  width: 36px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#header-profile > div.name {
+  height: 70px;
+  max-height: 70px;
+  padding: 0 5px 0 5px;
+  vertical-align: middle;
+  display: table-cell;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 154px;
+  width: 154px;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel div.arrow {
+  z-index: 3;
+  vertical-align: middle;
+  display: table-cell;
+  height: 70px;
+  width: 10px;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#header-profile > div.arrow > div.parrowd {
+  background: url("../images/icons/icons.png") no-repeat scroll -132px -72px transparent;
+  height: 5px;
+  width: 10px;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#header-profile > div.arrow > div.parrowu {
+  background: url("../images/icons/icons.png") no-repeat scroll -137px -81px transparent;
+  height: 5px;
+  width: 10px;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#header-config {
+  cursor: pointer;
+  width: 40px;
+  z-index: 3;
+  height: 70px;
+  vertical-align: middle;
+  display: table-cell;
+  padding: 0 10px 0 10px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > .header-configd {
+  background: #05c629;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#header-config > div#config-menu-button > div#config-menu-icon {
+  background: url("../images/icons/icons.png") no-repeat scroll -65px -32px transparent;
+  height: 22px;
+  width: 20px;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#header-config > div#config-menu-button .config-menu-icon-active {
+  background: url("../images/icons/icons.png") no-repeat scroll -65px -2px transparent !important;
+  z-index: 4;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#header-config > div#config-menu-button {
+  z-index: 3;
+  vertical-align: middle;
+  display: table-cell;
+  height: 70px;
+  width: 20px;
+  padding: 0 10px 0 0;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#header-config > div.arrow > div.carrowd {
+  background: url("../images/icons/icons.png") no-repeat scroll -132px -72px transparent;
+  height: 5px;
+  width: 10px;
+}
+
+#innerpage > div#header > div.wrapper > div#header-panel > div#header-config > div.arrow > div.carrowu {
+  background: url("../images/icons/icons.png") no-repeat scroll -137px -81px transparent;
+  height: 5px;
+  width: 10px;
+}
+
+.ui-search {
+  background: #333437;
+  height: 20px;
+  color: #afafaf;
+  padding: 10px 10px;
+
+  border: none;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.ui-search-button {
+  background: #333437 url('../images/search-button.jpg') no-repeat left top;
+  width: 46px;
+  height: 40px;
+
+  border: none;
+  -moz-border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
+
+  text-indent: -9999px;
+  position: relative;
+  margin-left: -5px;
+  cursor: pointer;
+}
+.ui-search-button, x:-moz-any-link, x:default {
+  top: 1px;
+}
+
+
+.header-forum {
+  height: 70px;
+  vertical-align: middle;
+  display: table-cell;
+  cursor: pointer;
+}
+
+.header-forum-highlight {
+  background: none repeat scroll 0 0 white;
+}
+.new-message-highlight{
+  margin-left: 11px;
+  margin-top: 6px;
+  border:#afafaf 2px solid;
+  border-top: #929292 2px solid;
+  border-bottom:#afafaf 2px solid;
+  border-left: #929292 2px solid;
+  border-right:#afafaf 2px solid;
+  background:#fa0c01;
+  color:#fff;
+  width:12px;
+  height:12px;
+  line-height:13px;
+  vertical-align:middle;
+  text-align:center;
+  font-size:8px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+}
+
+.header-forum > div#notification {
+  background: url("../images/icons/icons.png") no-repeat scroll -35px -38px transparent;
+  float: left;
+  height: 14px;
+  width: 20px;
+}
+.forum-menu {
+  width: 440px;
+  max-height: 280px;
+  background: none repeat scroll 0 0 white;
+  position: relative;
+  left: 500px;
+  opacity: 0.95;
+  display: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  z-index: 99999 !important;
+  border: 1px solid #bebebe;
+
+}
+
+.forum-menu .forum-menu-see-all{
+  font-size: 12px;
+  text-align: center;
+  background: none repeat scroll 0 0 white;
+}
+.forum-menu .forum-menu-see-all a{
+  text-decoration: none;
+  color: #767676;
+}
+
+.forum-menu  .comment{
+  cursor: pointer;
+}
+
+.forum-menu  .comment > .comment{
+  font-size: 11px !important;
+}
+.forum-menu  .comment > h3{
+  font-size: 11px !important;
+}
+.forum-menu div#forum-menu-comment-list{
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 270px;
+}
+
+.paginationWI {
+  background: #FDFEFE;
+  padding: 4px 7px;
+  margin: 10px 2px;
+  text-align:center;
+}
+
+.pointer-top{
+  border-style: dashed dashed solid;
+  border-color: transparent;
+  border-bottom-color: #bebebe;
+  border-width: 0 10px 10px;
+  float: left;
+  margin-right: -17px;
+}
+
+.search-suggestion-user-box, .search-suggestion-problem-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  color: #454445;
+  font-size: 12px;
+  text-decoration: none;
+  text-indent: 20px;
+}

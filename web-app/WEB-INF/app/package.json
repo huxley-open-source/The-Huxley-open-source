@@ -1,0 +1,14 @@
+{
+  "name": "th-web-component",
+  "version": "0.0.0",
+  "private": true,
+  "authors": [
+    "Marcio Augusto Guimarães <marcioaugustosg@gmail.com>"
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-less": "~0.11.0"
+  }
+}
+    

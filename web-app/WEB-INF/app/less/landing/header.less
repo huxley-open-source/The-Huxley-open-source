@@ -1,0 +1,162 @@
+.gradient-left (@beginColor, @finalColor) {
+  background-color: @finalColor;
+  background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(@beginColor));
+  background: -webkit-linear-gradient(left, @beginColor, @finalColor);
+  background:    -moz-linear-gradient(left, @beginColor, @finalColor);
+  background:     -ms-linear-gradient(left, @beginColor, @finalColor);
+  background:      -o-linear-gradient(left, @beginColor, @finalColor);
+}
+
+header {
+  background-color: #272b31;
+  height: 40px;
+  min-width: 1000px;
+  & .menu {
+    float: right;
+    margin: 6px 15px;
+    .box-shadow(0px 0px 12px 0px  rgba(0, 0, 0, 0.7));
+    &.menu-small {
+
+    }
+
+    & div {
+      float: left;
+    }
+
+    & .menu-logo {
+      background: url('/huxley/images/landing/hux-menu.png') @blue no-repeat center center;
+      width: 43px;
+      height: 40px;
+    }
+
+    & .menu-items {
+      height: 40px;
+      color: @white;
+      .gradient-left (#16171b, #282b32);
+      & .login {
+        position: relative;
+
+        & fieldset {
+          border: none;
+        }
+        & .login-box {
+          background: #272b31;
+          border: 1px solid #05adef;
+        }
+
+        & .dropdown {
+          display: block;
+          position: absolute;
+          top: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+#login-button {
+
+  margin: 6px 1px 1px 4px;
+  position: relative;
+
+  > a {
+    color: @white;
+    text-decoration: none;
+    padding: 5px 17px 8px;
+    z-index: 1002;
+    position: absolute;
+    border: 1px solid transparent;
+
+    &:hover {
+      color: @blue;
+    }
+
+    &.active {
+      border: 1px solid @blue;
+      border-bottom: 1px solid @gray-dark;
+      background: @gray-dark;
+    }
+  }
+
+  > div {
+    padding: 15px 15px 4px 15px;
+    width: 202px;
+    position: absolute;
+    top: 100%;
+    color: gray;
+    border: 1px solid @blue;
+    margin-top: 34px;
+    background: @gray-dark;
+    min-width: 170px;
+    z-index: 1001;
+    display: none;
+
+    strong {
+      text-transform: uppercase;
+      color: @blue;
+      font-weight: 100;
+    }
+  }
+}
+
+#about-huxley {
+  margin-left: 85px;
+  margin-top: 6px;
+  border-left: 1px solid @gray;
+  border-right: 1px solid @gray;
+  padding: 0 4px;
+
+  button {
+    width: 160px;
+    text-align: right;
+    background: @black;
+    border: none;
+    color: @white;
+
+    span.caret {
+      border-top: 4px solid @blue;
+      margin-left: 10px;
+    }
+  }
+
+  ul.dropdown-menu {
+    background: @blue;
+    color: white;
+    border-radius: 0;
+    margin-left: 5px;
+
+    > li > a {
+      padding: 2px 6px;
+      color: @white;
+
+      &:hover {
+        background-color: @blue-dark;
+      }
+    }
+  }
+}
+
+.facebook-like {
+  margin: 10px;
+  min-width: 56px;
+}
+
+.user-help {
+  margin-top: 17px;
+  width: 100%;
+  text-align: right;
+  font-size: 12px;
+  border-top: 1px solid @gray;
+  padding-top: 4px;
+  a {
+    color: @white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.submit-area {
+  width: 100%;
+}

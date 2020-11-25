@@ -1,0 +1,118 @@
+.main-menu-container {
+  background-color: #f3f3f3;
+  padding: 15px 0;
+  border-bottom: 3px solid #fdfdfd;
+}
+.main-menu {
+
+  display: table;
+  width: 100%;
+
+  & li {
+
+    display: table-cell;
+    vertical-align: middle;
+    .gradientBar(@white, darken(@white, 8%));
+
+    & .underline-green {
+      border-color: #18f801;
+    }
+    & .underline-orange {
+      border-color: #e88448;
+    }
+    & .underline-blue {
+      border-color: #4c94e8;
+    }
+    & .underline-purple {
+      border-color: #de83e3;
+    }
+
+    & a {
+
+      display: block;
+      line-height: 73px;
+      height: 73px;
+      color: #454445;
+      font-family: Trebuchet MS,'Helvetica',Arial;
+      font-size: 17px;
+      text-transform: uppercase;
+
+      &:hover {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        text-decoration: none;
+
+        .icon-problem {
+          background: url("../images/problems.png") no-repeat scroll 0 -26px transparent;
+          height: 25px;
+          width: 34px;
+        }
+
+        .icon-submission {
+          background: url("../images/submissions.png") no-repeat scroll 0 -27px transparent;
+        }
+
+        .icon-questionnaire {
+          background: url("../images/questionnaire.png") no-repeat scroll 0 -30px transparent;
+        }
+
+        .icon-group {
+          background: url("../images/groups.png") no-repeat scroll 0 -28px transparent;
+        }
+      }
+
+      & .menu-icon {
+        display: table;
+        height: 100%;
+        float: left;
+        margin: 0 6px 0 3px;
+
+        & span {
+          display: table-cell;
+          height: 100%;
+          vertical-align: middle;
+        }
+      }
+
+      & i {
+
+        float: left;
+
+        &.icon-problem {
+          background: url("../images/problems.png") no-repeat scroll left top transparent;
+          height: 25px;
+          width: 34px;
+        }
+
+        &.icon-submission {
+          background: url("../images/submissions.png") no-repeat scroll left top transparent;
+          height: 25px;
+          width: 34px;
+        }
+
+        &.icon-questionnaire {
+          background: url("../images/questionnaire.png") no-repeat scroll left top transparent;
+          height: 21px;
+          width: 34px;
+        }
+
+        &.icon-group {
+          background: url("../images/groups.png") no-repeat scroll left top transparent;
+          width: 34px;
+          height: 26px;
+        }
+      }
+
+      & span {
+        &.underline {
+          display: block;
+          border-bottom-width: 1px;
+          border-bottom-style: solid;
+          width: 32px;
+          height: 100%;
+          float: right;
+        }
+      }
+    }
+  }
+}
